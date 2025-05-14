@@ -1,0 +1,139 @@
+:root {
+  font-family: 'Segoe UI', Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #1f1f1f;
+
+  --primary-color: #4caf50;
+  --secondary-color: #646cff;
+  --text-light: #ffffff;
+  --text-dark: #213547;
+  --background-light: #f9f9f9;
+  --background-dark: #1f1f1f;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+header {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.2rem;
+}
+
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  text-indent: -1rem;
+}
+
+ul li::before {
+  content: '•';
+  color: var(--primary-color);
+  margin-right: 0.5rem;
+}
+
+.job h3,
+.education h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.job p,
+.education p {
+  margin: 0.3rem 0;
+  font-style: italic;
+  color: var(--secondary-color);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+  }
+
+  body {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+  }
+
+  main {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+  }
+}
